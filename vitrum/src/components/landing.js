@@ -15,6 +15,7 @@ export const Landing = () => {
         <h2 style={{alignContent:"center", color:"black"}}>
          Begin
         </h2>
+        <h1>TESTING</h1>
       </Link>
 
     </div>

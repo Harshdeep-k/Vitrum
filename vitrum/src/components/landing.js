@@ -14,6 +14,7 @@ export const Landing = () => {
         <h2>
          Begin
         </h2>
+        <h1>TESTING</h1>
       </Link>
 
     </div>

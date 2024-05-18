@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import '@/styles/globals.css';
 import { NearContext } from '@/context';
 import { Navigation } from '@/components/navigation';
-
+import background from "@/images/image.png";
 import { Wallet } from '@/wallets/near';
 import { NetworkId, HelloNearContract } from '@/config';
 
@@ -20,4 +20,5 @@ export default function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </NearContext.Provider>
   );
+  
 }

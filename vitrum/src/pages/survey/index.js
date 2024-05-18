@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SuccessPage from '@/pages/success';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import styles from '@/styles/app.module.css';
 
 function SurveyForm() {
   const [formData, setFormData] = useState({
@@ -29,7 +30,7 @@ function SurveyForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="firstName">First Name:</label>
+        <label htmlFor="firstName"  className={styles.survey}>First Name:</label>
         <input
           type="text"
           id="firstName"
@@ -37,6 +38,7 @@ function SurveyForm() {
           value={formData.firstName}
           onChange={handleChange}
           required
+         
         />
       </div>
       <div>

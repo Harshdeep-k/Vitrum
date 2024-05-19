@@ -6,6 +6,7 @@
 
 :root {
 
+
   --text-primary: #000000;
   --text-secondary: #FFFFFF;
 
@@ -41,10 +42,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width:488px) {
-  html {
-    size: 9px;
-  }
+
 }
 
 

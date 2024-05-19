@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import styles from '@/styles/app.module.css';
+
 import SuccessPage from '@/pages/success';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
@@ -24,55 +26,76 @@ function SurveyForm() {
     console.log('Form data submitted:', formData);
     window.location = '/choices';
   };
-  
+
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="firstName">First Name:</label>
-        <input
-          type="text"
-          id="firstName"
-          name="firstName"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="lastName">Last Name:</label>
-        <input
-          type="text"
-          id="lastName"
-          name="lastName"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="address">Address:</label>
-        <textarea
-          id="address"
-          name="address"
-          value={formData.address}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="dob">Date of Birth:</label>
-        <input
-          type="date"
-          id="dob"
-          name="dob"
-          value={formData.dob}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    <div className={styles.pagebody}>
+      <form className={styles.formlayout} onSubmit={handleSubmit}>
+        <div className={styles.nameEntry}>
+          <div>
+            <input
+              className={styles.inputField}
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder='First Name'
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <input
+              className={styles.inputField}
+              type="text"
+              id="middleName"
+              name="middleName"
+              placeholder='Middle Name (if applicable)'
+              value={formData.middleName}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <input
+              className={styles.inputField}
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder='Last Name'
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+            />
+          </div>
+        </div>
+
+        <div className={styles.center}>
+          {/* <label htmlFor="address">Address:</label> */}
+          <input
+            className={styles.inputlargeField}
+            id="address"
+            name="address"
+            placeholder='Enter your full Address:'
+            value={formData.address}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className={styles.center}>
+          {/* <label htmlFor="dob">Date of Birth:</label> */}
+          <input
+            className={styles.inputlargeField}
+            type="date"
+            id="dob"
+            name="dob"
+            value={formData.dob}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <button type="submit" className={styles.submit}>Submit</button>
+      </form>
+    </div>
   );
 }
 

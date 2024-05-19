@@ -7,8 +7,6 @@
   /* flex-grow: 1; */
 }
 
-
-
 .card {
   padding: 1rem 5rem;
   border-radius: var(--border-radius);
@@ -19,15 +17,53 @@
   /* transition: background 200ms, border 200ms; */
 }
 
-/* .card span {
-  display: inline-block;
-  transition: transform 200ms;
-} */
-
 .card h2 {
   color: var(--button-secondary);
   /* text-decoration: none; */
 }
 
+.nameEntry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.inputField {
+  /* width:2rem; */
+  height: 2rem;
+  border-radius: var(--border-radius);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  /* font-family: ; */
+}
 
+.inputlargeField {
+  width: 70%;
+  height: 2rem;
+  border-radius: var(--border-radius);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* font-family: ; */
+}
+
+.formlayout {
+  margin: 2rem;
+  text-align: center;
+  height: inherit;
+  /* width: 60%; */
+  /* align-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.submit {
+  width: 30%;
+  align-self: center;
+  height: 2rem;
+  border-radius: var(--border-radius);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

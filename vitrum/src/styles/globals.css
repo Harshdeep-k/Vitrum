@@ -98,8 +98,13 @@ p {
   font-family: 'Plus Jakarta Sans';
   color: var(--text-primary);
   text-align: center;
+}
 
-
+label {
+  font-family: 'Plus Jakarta Sans';
+  color: var(--text-primary);
+  font-size: var(--fs-xl);
+  text-align: center;
 }
 
 

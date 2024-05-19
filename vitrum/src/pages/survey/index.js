@@ -95,6 +95,7 @@ function SurveyForm() {
           />
         </div>
         <button type="submit" className={styles.submit}>Submit</button>
+        {/* if the user can't be found, print a message stating so, so that they can edit info again and hit enter again */}
       </form>
     </div>
   );

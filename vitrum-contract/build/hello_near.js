@@ -845,8 +845,7 @@ let VotingContract = (_dec2 = NearBindgen({}), _dec3 = view(), _dec4 = view(), _
     const candidate = this.candidates.get(name);
     assert(candidate !== null, "Candidate does not exist");
     return candidate.votes;
-  } //signerAccountId
-
+  }
   addCandidate({
     name
   }) {

@@ -1,3 +1,12 @@
+.pagebody {
+  margin: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
 .main {
   display: flex;
   flex-direction: column;
@@ -47,21 +56,21 @@
 }
 
 .card {
-  padding: 1rem 1.2rem;
+  padding: 1rem 5rem;
   border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
+  background: var(--button-primary);
+  border: 1px solid var(--border-secondary);
+  width: fit-content;
   transition: background 200ms, border 200ms;
 }
 
-.card span {
+/* .card span {
   display: inline-block;
   transition: transform 200ms;
-}
+} */
 
 .card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+  color: var(--button-secondary);
 }
 
 .card p {

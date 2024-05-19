@@ -36,7 +36,7 @@ export const Navigation = () => {
         <Link href="/help" passHref legacyBehavior>
           <Image src={Help} alt="HELP" className="icons-nav" />
         </Link>
-        <Link href="/help" passHref legacyBehavior>
+        <Link href="/accessible" passHref legacyBehavior>
           <Image src={Accessible} alt="HELP" className="icons-nav" />
         </Link>
       </div>

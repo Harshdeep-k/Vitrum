@@ -1,10 +1,10 @@
 import styles from '@/styles/app.module.css';
-import {Landing} from '@/components/landing';
+import { Landing } from '@/components/landing';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.grid}>
+    <main >
+      <div>
         <Landing />
       </div>
     </main>

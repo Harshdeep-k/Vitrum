@@ -1,3 +1,4 @@
+import styles from '@/styles/app.module.css';
 import React, { useState } from 'react';
 
 function ChoiceButtons({ choices, onSelect }) {
@@ -28,8 +29,13 @@ function Choice() {
   const choices = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
 
   return (
-    <div>
-      <h1>Select a choice:</h1>
+    <div className={styles.pagebody}>
+      <h2 className={styles.pageHeader}>Cast your vote</h2>
+
+      <div className={styles.choiceList}>
+        {/* a scrollable div that will display the names of all candidates. only one is allowed to be selected. */}
+        {/*  */}
+      </div>
       <ChoiceButtons choices={choices} onSelect={handleChoiceSelect} />
       {selectedChoice && <p>You selected: {selectedChoice}</p>}
       

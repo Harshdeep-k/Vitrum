@@ -30,6 +30,7 @@ function SurveyForm() {
 
   return (
     <div className={styles.pagebody}>
+      <h2 className={styles.pageHeader}>Verify your ID</h2>
       <form className={styles.formlayout} onSubmit={handleSubmit}>
         <div className={styles.nameEntry}>
           <div>
